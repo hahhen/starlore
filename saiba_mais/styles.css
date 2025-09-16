@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #18122b;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section{
+    margin-bottom: 150px;
+}
+
+main {
+    margin-top: 70px;
+    width: 100%;
+    max-width: 1360px;
+    overflow: hidden;
+}
+
+.car {
+    position: relative;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.img-wrap {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.img-wrap img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.btn {
+    transition: all 0.1s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn img{
+    filter: invert();
+    margin-bottom: -4px;
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.part-2-wrapper{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 90%;
+    background-color: #8c67e1;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid #baa2c7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header a {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: white;
+}
+
+.active {
+    font-weight: bold;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    background-color: #261d44;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.branding span {
+    color: #d9d9d9;
+    font-size: 12px;
+}
+
+.footer-links a {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.fiap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.social img {
+    filter: invert();
+}
+
+.caixa-d-texto {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: #8c67e1;
+    border: 2px solid #baa2c7;
+    border-radius: 15px;
+}
+
+.caixa-d-texto p {
+    color: #d9d9d9;
+    margin: 3px;
+    font-size: 22px;
+}
+
+.caixa-d-texto h2 {
+    margin: 3px;
+}
+
+.caixas {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.part-1{
+    position: relative;
+    margin-top: 150px;
+}
+
+.part-2{
+    position: relative;
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.part-3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.part-1 .caixa-d-texto {
+    max-width: 500px;
+}
+
+.part-2 .caixa-d-texto {
+    max-width: 400px;
+}
+
+.part-3 .caixa-d-texto {
+    max-width: 400px;
+    position: relative;
+}
+
+.right {
+    margin-top:250px;
+}
+
+.passaro{
+    bottom: 0px;
+    left: 100px;
+    width: 370px;
+    z-index: -1;
+    opacity: 0.37;
+    position: absolute;
+}
+
+.arco{
+    top: -10px;
+    right: 300px;
+    width: 380px;
+    z-index: -1;
+    opacity: 0.37;
+    position: absolute;
+}
+
+.nuvem{
+    position: absolute;
+    left: -300px;
+    width: 400px;
+    bottom: -100px;
+    right: -300px;
+}
+
+.estrela-1{
+    top: -100px;
+    left: 100px;
+    width: 200px;
+    z-index: -1;
+    rotate: 140deg;
+    position: absolute;
+}
+
+.estrela-2{
+    position: absolute;
+    width: 230px;
+    right: 300px;
+    top: -100px;
+    rotate: 30deg;
+}
+
+.sombrejo{
+    bottom: -200px;
+    right: -50px;
+    width: 370px;
+    z-index: -1;
+    position: absolute;
+}

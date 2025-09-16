@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #18122b;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.car {
+    position: relative;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.img-wrap {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.img-wrap img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.btn {
+    transition: all 0.1s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn img{
+    filter: invert();
+    margin-bottom: -4px;
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+header{
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 90%;
+    background-color: #8c67e1;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid #baa2c7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header a{
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: white;
+}
+
+.active{
+    font-weight: bold;
+    color: white;
+}
+
+.img-preview{
+    width: 100%;
+    height: calc(100dvh + 130px);
+    overflow: visible;
+    background-image: url("./img/tela_de_inicio.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.part-1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.part-1 h1{
+    color: #baa2c7;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section{
+    padding: 50px;
+    margin-bottom: 180px;
+}
+
+.part-1-wrapper{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    gap: 80px;
+    align-items: center;
+}
+
+.caixa-d-texto{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: #8c67e1;
+    border: 2px solid #baa2c7;
+    border-radius: 15px;
+}
+
+main{
+    width: 100%;
+    max-width: 1360px;
+    overflow: hidden;
+}
+
+.part-1 .caixa-d-texto{
+    max-width: 400px;
+}
+
+.caixa-d-texto p{
+    color:  #d9d9d9;
+    margin: 3px;
+    font-size: 22px;
+}
+
+.caixa-d-texto h2{
+    margin: 3px;
+}
+
+.part-1-left{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+
+.part-1-right{
+    flex: 1;
+}
+
+.part-2 .caixa-d-texto{
+    width: 500px;
+    justify-content: center;
+    position: relative;
+}
+
+.part-2 .caixa-d-texto h2{
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.passaro{
+    top: 0;
+    left: 150px;
+    width: 300px;
+    z-index: -1;
+    opacity: 0.37;
+    position: absolute;
+}
+
+.arco{
+    top: -150px;
+    right: 200px;
+    width: 250px;
+    z-index: -1;
+    opacity: 0.37;
+    position: absolute;
+}
+
+.nuvem{
+    position: absolute;
+    width: 400px;
+    bottom: -100px;
+    left: -300px;
+}
+
+.part-2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.estrelas_1{
+ position: absolute;
+ right: -10px;
+ rotate: 150deg;
+ width: 250px;
+ bottom: -100px;
+ z-index: 1;
+}
+
+.estrelas_2{
+ position: absolute;
+ left: -20px;
+ rotate: 1200deg;
+ width: 250px;
+ top: 0px;
+ z-index: 1;
+}
+
+.estrelas_4{
+    bottom: 50px;
+    right: 200px;
+    rotate: 20deg;
+    width: 250px;
+    z-index: -1;
+    position: absolute;
+}
+
+.stella{
+    position: absolute;
+    right: -110px;
+    bottom: -100px;
+    width: 450px;
+}
+
+footer{
+    width: 100%;
+    background-color: #261d44;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.footer-left{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.branding{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.branding span{
+    color: #d9d9d9;
+    font-size: 12px;
+}
+
+.footer-links a{
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+.footer-links{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-right{  
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.fiap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.social img{
+    filter: invert();
+}
